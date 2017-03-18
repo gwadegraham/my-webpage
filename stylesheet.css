@@ -20,6 +20,10 @@ img {
   left: 900px;
 }
 
+a {
+  color: #6496c8;
+}
+
 #title{
   font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
 	font-size: 40px;
@@ -59,9 +63,26 @@ span.heading{
   font-family: 'Ubuntu', Georgia, Times, serif;
   font-size: 20px;
   line-height: 20px;
-  /*text-align: left;
-  font-weight: 900;*/
   color: #6496c8;
+}
+
+span.randomHeading {
+  font-family: 'Ubuntu', Georgia, Times, serif;
+	font-size: 25px;
+	line-height: 25px;
+  padding: 0px;
+  text-align: left;
+}
+
+span.alignleft{
+  /*float: left;*/
+}
+
+span.alignright{
+  position: absolute;
+  top: 127px;
+  left: 800px;
+  float: right;
 }
 
 #footer{
