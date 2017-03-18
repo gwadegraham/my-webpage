@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<!-- imports css file and google font api's -->
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<link rel="stylesheet" href="stylesheet.css">
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:bold' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<!-- title of webpage -->
+<title>Garrett Graham</title>
+<body>
+  <!-- I created a div, so that the white, translucent background would surround all text -->
+  <div>
+    <h1 id = "title">Garrett Graham</h1>
+    <!-- section title, "About" -->
+    <p id = "aboutTitle">About</p>
+    <!-- text for the "About" sectino -->
+    <p id = "aboutText" class = "abt">
+
+      <img src = "me.jpg" alt = "Profile Picture">
+
+      I am a junior at the University of Arkansas, expecting to graduate <br> in May of 2018.
+      I'm currently seeking a Bachelor's of Science <br> in Computer Engineering, and a minor in mathematics.
+      <br><br>
+
+      <span class = "bold">Career Interests:</span> I'm passionate about software development, <br> and using this medium to form creative
+      solutions.  Post-graduation, <br> I hope to get in the software development field and to continue <br> growing
+      my knowledge and passions as a professional.
+      <br><br>
+
+      <span class = "bold">Other Interests:</span>  Mobile development, photography, soccer, and coffee.
+      <br><br>
+
+    </p>
+
+    <h2 id = "experienceText" style=display:none; class = "exp">
+      <span class = "heading">YMCA Camp Erdman</span> <br>
+      <p>Camp Counselor<br>
+        May 2016 - August 2016
+        Waialua, HI </p>
+
+      <span class = "heading">Bale Chevrolet</span> <br>
+      <p>Service Porter<br>
+        March 2015 - August 2015
+        Little Rock, AR </p>
+
+      <span class = "heading">University of Arkansas Recreation</span> <br>
+      <p>Intramural Referee<br>
+        August 2014 - December 2014
+        Fayetteville, AR </p><br>
+    </h2>
+
+    <p id = "workText" style=display:none; class = "work">
+      This is text about freshman classes <br><br>
+
+      This is text about sophomore classes<br><br>
+
+      This is text about junior classes<br><br>
+
+      This is text about senior classes
+    </p>
+
+    <!-- created a class for button styling -->
+    <section class = "border">
+      <!-- functionality not yet implemented to move to exp/courses -->
+    <button type="button" class = "border" id = "aboutId" onclick=""> About </button>
+    <button type="button" class = "border" id = "expId" onclick=""> Experience </button>
+    <button type="button" class = "border" id = "workId" onclick=""> Coursework </button>
+    </section>
+    <hr>
+    <!-- simple footer text.....seeking more efficient way to space text -->
+    <p id = "footer">Built by Garrett Graham - made with HTML and CSS.&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Last Updated: 3/18/16</p>
+
+  </div>
+<script>
+var varAboutText = $( "p.abt" ).html();
+var varExpText = $( "h2.exp" ).html();
+var varWorkText = $ ("p.work" ).html();
+var varButtonAbout = "About";
+var varButtonExperience = $("button.border").html();
+var varButtonCoursework = $("button.border2").html();
+
+
+
+
+$(document).ready(function () {
+
+  //function for clicking the experience button
+  $("#aboutId").click(function () {
+
+        $("#aboutTitle").fadeOut(function () {
+            $("#aboutTitle").html('About').fadeIn();
+        })
+
+        $("#aboutText").fadeOut(function () {
+            $("#aboutText").html(varAboutText).fadeIn();
+        })
+
+  })
+
+  //function for clicking the experience button
+  $("#expId").click(function () {
+
+        $("#aboutTitle").fadeOut(function () {
+            $("#aboutTitle").html('Experience').fadeIn();
+        })
+
+        $("#aboutText").fadeOut(function () {
+            $("#aboutText").html(varExpText).fadeIn();
+        })
+
+  })
+
+  //function for clicking the coursework button
+  $("#workId").click(function () {
+
+        $("#aboutTitle").fadeOut(function () {
+            $("#aboutTitle").html('Coursework').fadeIn();
+        })
+
+        $("#aboutText").fadeOut(function () {
+            $("#aboutText").html(varWorkText).fadeIn();
+        })
+
+
+  })
+
+
+});
+</script>
+
+</body>
+</html>
