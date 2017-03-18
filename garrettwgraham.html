@@ -80,15 +80,45 @@
       </span>
     </h2>
 
-    <p id = "workText" style=display:none; class = "work">
-      This is text about freshman classes <br><br>
+    <h2 id = "workText" style=display:none; class = "work">
+      <span class = "alignleft">
+        <span class = "heading">Freshman</span> <br>
+        <p>CHEM 1113&emsp; Univ. Chemistry for Engineers I<br>
+        GNEG 1111&emsp; Honors Intro. to Engineering<br>
+        PHYS 2054&emsp; Honors Univ. Physics I<br>
+        PSYC 2003&emsp; General Psychology</p>
 
-      This is text about sophomore classes<br><br>
+        <span class = "heading">Sophomore</span> <br>
+        <p>CSCE 2004&emsp; Programming Foundations I<br>
+        GNEG 1121&emsp; Intro. to Engineering II<br>
+        MATH 2564&emsp; Calculus II<br>
+        PHIL 3103&emsp; Ethics and the Professions<br>
+        PHYS 2074&emsp; Honors Univ. Physics II<br>
+        CSCE 2004&emsp; Programming Foundations II<br>
+        CSCE 2114&emsp; Digital Design<br>
+        MATH 2574&emsp; Calculus III<br>
+        MATH 2603&emsp; Discrete Mathematics</p>
 
-      This is text about junior classes<br><br>
+      </span>
 
-      This is text about senior classes
-    </p>
+      <span class = "courseAlignRight">
+        <span class = "heading">Junior</span> <br>
+        <p>CSCE 2214&emsp; Computer Organization<br>
+        CSCE 3193&emsp; Programming Paradigms<br>
+        INEG 2313&emsp; Applied Prob. and Stat. for Engineers I<br>
+        MATH 2584&emsp; Elementary Differential Equations<br>
+        THTR 1003&emsp; Theatre Appreciation<br>
+        CSCE 3513&emsp; Software Engineering<br>
+        CSCE 3613&emsp; Operating Systems<br>
+        CSCE 4523&emsp; Database Management Systems<br>
+        CSCE 4853&emsp; Information Security<br>
+        ELEG 3933&emsp; Circuits and Electronics</p>
+
+        <span class = "heading">Senior</span> <br>
+        <p>N/A</p>
+
+      </span>
+    </h2>
 
     <!-- created a class for button styling -->
     <section class = "border">
@@ -107,7 +137,7 @@
 <script>
 var varAboutText = $( "p.abt" ).html();
 var varExpText = $( "h2.exp" ).html();
-var varWorkText = $ ("p.work" ).html();
+var varWorkText = $ ("h2.work" ).html();
 var varButtonAbout = "About";
 var varButtonExperience = $("button.border").html();
 var varButtonCoursework = $("button.border2").html();

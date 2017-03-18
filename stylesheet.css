@@ -85,6 +85,13 @@ span.alignright{
   float: right;
 }
 
+span.courseAlignRight{
+  position: absolute;
+  top: 175px;
+  left: 800px;
+  float: right;
+}
+
 #footer{
   font-family: 'Raleway', sans-serif;
 	font-size: 16;
